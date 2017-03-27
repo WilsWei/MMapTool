@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E48D79998483C831D4C0987 /* Pods_MMapTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30F99D23042A3DCC61F4D9D /* Pods_MMapTool.framework */; };
+		3FE7B9051AFBF7863C49B5A2 /* Pods_MMapToolUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C14FBE32ED7FB26FB18EEE7 /* Pods_MMapToolUITests.framework */; };
+		E94F3E3961514F2D4BE7C382 /* Pods_MMapToolTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E12D43A392CB1277846C0D8F /* Pods_MMapToolTests.framework */; };
 		F59FEEF31E77CA0C0030A8DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FEEF21E77CA0C0030A8DC /* AppDelegate.swift */; };
 		F59FEEF51E77CA0C0030A8DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FEEF41E77CA0C0030A8DC /* ViewController.swift */; };
 		F59FEEF81E77CA0C0030A8DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59FEEF61E77CA0C0030A8DC /* Main.storyboard */; };
@@ -14,6 +17,7 @@
 		F59FEEFD1E77CA0C0030A8DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59FEEFB1E77CA0C0030A8DC /* LaunchScreen.storyboard */; };
 		F59FEF081E77CA0C0030A8DC /* MMapToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FEF071E77CA0C0030A8DC /* MMapToolTests.swift */; };
 		F59FEF131E77CA0C0030A8DC /* MMapToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FEF121E77CA0C0030A8DC /* MMapToolUITests.swift */; };
+		F5E610351E8274310084116A /* Directions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E610341E8274310084116A /* Directions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		054DDEB04E7A0C923E6FF668 /* Pods-MMapTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMapTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMapTool/Pods-MMapTool.release.xcconfig"; sourceTree = "<group>"; };
+		20C5B87A536DE289777D2AC4 /* Pods-MMapToolUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMapToolUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMapToolUITests/Pods-MMapToolUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B3193BCFCB9D1499E12F383 /* Pods-MMapTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMapTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMapTool/Pods-MMapTool.debug.xcconfig"; sourceTree = "<group>"; };
+		81ABDDF950D46CE86A554CBC /* Pods-MMapToolTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMapToolTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MMapToolTests/Pods-MMapToolTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C14FBE32ED7FB26FB18EEE7 /* Pods_MMapToolUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMapToolUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9BD0C114CFEF8F914AB795C /* Pods-MMapToolTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMapToolTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMapToolTests/Pods-MMapToolTests.release.xcconfig"; sourceTree = "<group>"; };
+		C30F99D23042A3DCC61F4D9D /* Pods_MMapTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMapTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE8234AB13E765A913B33C74 /* Pods-MMapToolUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMapToolUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MMapToolUITests/Pods-MMapToolUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E12D43A392CB1277846C0D8F /* Pods_MMapToolTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMapToolTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59FEEEF1E77CA0C0030A8DC /* MMapTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMapTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59FEEF21E77CA0C0030A8DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F59FEEF41E77CA0C0030A8DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +60,7 @@
 		F59FEF0E1E77CA0C0030A8DC /* MMapToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMapToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59FEF121E77CA0C0030A8DC /* MMapToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMapToolUITests.swift; sourceTree = "<group>"; };
 		F59FEF141E77CA0C0030A8DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5E610341E8274310084116A /* Directions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Directions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E48D79998483C831D4C0987 /* Pods_MMapTool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E94F3E3961514F2D4BE7C382 /* Pods_MMapToolTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FE7B9051AFBF7863C49B5A2 /* Pods_MMapToolUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7D5BB185387DB1302EDB761 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C30F99D23042A3DCC61F4D9D /* Pods_MMapTool.framework */,
+				E12D43A392CB1277846C0D8F /* Pods_MMapToolTests.framework */,
+				8C14FBE32ED7FB26FB18EEE7 /* Pods_MMapToolUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3C984A2E176C361268E1829 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B3193BCFCB9D1499E12F383 /* Pods-MMapTool.debug.xcconfig */,
+				054DDEB04E7A0C923E6FF668 /* Pods-MMapTool.release.xcconfig */,
+				81ABDDF950D46CE86A554CBC /* Pods-MMapToolTests.debug.xcconfig */,
+				B9BD0C114CFEF8F914AB795C /* Pods-MMapToolTests.release.xcconfig */,
+				20C5B87A536DE289777D2AC4 /* Pods-MMapToolUITests.debug.xcconfig */,
+				DE8234AB13E765A913B33C74 /* Pods-MMapToolUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F59FEEE61E77CA0C0030A8DC = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +121,8 @@
 				F59FEF061E77CA0C0030A8DC /* MMapToolTests */,
 				F59FEF111E77CA0C0030A8DC /* MMapToolUITests */,
 				F59FEEF01E77CA0C0030A8DC /* Products */,
+				C3C984A2E176C361268E1829 /* Pods */,
+				A7D5BB185387DB1302EDB761 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +145,7 @@
 				F59FEEF91E77CA0C0030A8DC /* Assets.xcassets */,
 				F59FEEFB1E77CA0C0030A8DC /* LaunchScreen.storyboard */,
 				F59FEEFE1E77CA0C0030A8DC /* Info.plist */,
+				F5E610341E8274310084116A /* Directions.swift */,
 			);
 			path = MMapTool;
 			sourceTree = "<group>";
@@ -132,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F59FEF171E77CA0C0030A8DC /* Build configuration list for PBXNativeTarget "MMapTool" */;
 			buildPhases = (
+				F3D272F82EF51104B68C3325 /* [CP] Check Pods Manifest.lock */,
 				F59FEEEB1E77CA0C0030A8DC /* Sources */,
 				F59FEEEC1E77CA0C0030A8DC /* Frameworks */,
 				F59FEEED1E77CA0C0030A8DC /* Resources */,
+				3BCDF23678AD43F0267C0FFC /* [CP] Embed Pods Frameworks */,
+				AD4D75B7816097E3D136A12A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F59FEF1A1E77CA0C0030A8DC /* Build configuration list for PBXNativeTarget "MMapToolTests" */;
 			buildPhases = (
+				E96ACC0088F6B337B7FEB0B2 /* [CP] Check Pods Manifest.lock */,
 				F59FEEFF1E77CA0C0030A8DC /* Sources */,
 				F59FEF001E77CA0C0030A8DC /* Frameworks */,
 				F59FEF011E77CA0C0030A8DC /* Resources */,
+				1484274A2522941A19DB31D1 /* [CP] Embed Pods Frameworks */,
+				09C1DDEA537E4EB7C2D4A6F5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F59FEF1D1E77CA0C0030A8DC /* Build configuration list for PBXNativeTarget "MMapToolUITests" */;
 			buildPhases = (
+				B60A12EB6427D3EC2DFC4F21 /* [CP] Check Pods Manifest.lock */,
 				F59FEF0A1E77CA0C0030A8DC /* Sources */,
 				F59FEF0B1E77CA0C0030A8DC /* Frameworks */,
 				F59FEF0C1E77CA0C0030A8DC /* Resources */,
+				6B4148C27B4213CEB43A68D6 /* [CP] Embed Pods Frameworks */,
+				0BCC82EC1611229B6C4FACED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,7 +245,7 @@
 				TargetAttributes = {
 					F59FEEEE1E77CA0C0030A8DC = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = KXWGV5T754;
+						DevelopmentTeam = 37Q58WDHKM;
 						ProvisioningStyle = Automatic;
 					};
 					F59FEF021E77CA0C0030A8DC = {
@@ -257,12 +309,151 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09C1DDEA537E4EB7C2D4A6F5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMapToolTests/Pods-MMapToolTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0BCC82EC1611229B6C4FACED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMapToolUITests/Pods-MMapToolUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1484274A2522941A19DB31D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMapToolTests/Pods-MMapToolTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3BCDF23678AD43F0267C0FFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMapTool/Pods-MMapTool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B4148C27B4213CEB43A68D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMapToolUITests/Pods-MMapToolUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD4D75B7816097E3D136A12A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MMapTool/Pods-MMapTool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B60A12EB6427D3EC2DFC4F21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E96ACC0088F6B337B7FEB0B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F3D272F82EF51104B68C3325 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F59FEEEB1E77CA0C0030A8DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F59FEEF51E77CA0C0030A8DC /* ViewController.swift in Sources */,
+				F5E610351E8274310084116A /* Directions.swift in Sources */,
 				F59FEEF31E77CA0C0030A8DC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,32 +604,39 @@
 		};
 		F59FEF181E77CA0C0030A8DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B3193BCFCB9D1499E12F383 /* Pods-MMapTool.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KXWGV5T754;
+				DEVELOPMENT_TEAM = 37Q58WDHKM;
 				INFOPLIST_FILE = MMapTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.siang.MMapTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F59FEF191E77CA0C0030A8DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 054DDEB04E7A0C923E6FF668 /* Pods-MMapTool.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = KXWGV5T754;
+				DEVELOPMENT_TEAM = 37Q58WDHKM;
 				INFOPLIST_FILE = MMapTool/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.siang.MMapTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		F59FEF1B1E77CA0C0030A8DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81ABDDF950D46CE86A554CBC /* Pods-MMapToolTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +652,7 @@
 		};
 		F59FEF1C1E77CA0C0030A8DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9BD0C114CFEF8F914AB795C /* Pods-MMapToolTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +668,7 @@
 		};
 		F59FEF1E1E77CA0C0030A8DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20C5B87A536DE289777D2AC4 /* Pods-MMapToolUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = KXWGV5T754;
@@ -483,6 +683,7 @@
 		};
 		F59FEF1F1E77CA0C0030A8DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE8234AB13E765A913B33C74 /* Pods-MMapToolUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = KXWGV5T754;
@@ -514,6 +715,7 @@
 				F59FEF191E77CA0C0030A8DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F59FEF1A1E77CA0C0030A8DC /* Build configuration list for PBXNativeTarget "MMapToolTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +724,7 @@
 				F59FEF1C1E77CA0C0030A8DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F59FEF1D1E77CA0C0030A8DC /* Build configuration list for PBXNativeTarget "MMapToolUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +733,7 @@
 				F59FEF1F1E77CA0C0030A8DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

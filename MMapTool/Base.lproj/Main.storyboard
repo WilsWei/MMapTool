@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MMapTool" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,62 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBl-Uj-iZV" customClass="GMSMapView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nBW-7B-Cyb">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距離：0公里" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sl2-Yn-mw3">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="時間： 0分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfd-Zg-J5J">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="費用：0 元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLe-Ke-Qag">
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.75532422556719014" green="0.75532422556719014" blue="0.75532422556719014" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="zLe-Ke-Qag" firstAttribute="centerY" secondItem="nBW-7B-Cyb" secondAttribute="centerY" id="77J-ON-8Sm"/>
+                                    <constraint firstAttribute="trailing" secondItem="zLe-Ke-Qag" secondAttribute="trailing" constant="20" id="Bff-NQ-iMq"/>
+                                    <constraint firstItem="dfd-Zg-J5J" firstAttribute="top" secondItem="Sl2-Yn-mw3" secondAttribute="bottom" constant="16" id="FGZ-nZ-EmR"/>
+                                    <constraint firstItem="Sl2-Yn-mw3" firstAttribute="leading" secondItem="nBW-7B-Cyb" secondAttribute="leading" constant="20" id="PGg-hG-zud"/>
+                                    <constraint firstItem="Sl2-Yn-mw3" firstAttribute="top" secondItem="nBW-7B-Cyb" secondAttribute="top" constant="20" id="cOp-2b-oQh"/>
+                                    <constraint firstItem="dfd-Zg-J5J" firstAttribute="leading" secondItem="nBW-7B-Cyb" secondAttribute="leading" constant="20" id="xlN-5b-pgU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JBl-Uj-iZV" secondAttribute="trailing" id="0If-lj-mt2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JBl-Uj-iZV" secondAttribute="bottom" id="BjP-MO-IZL"/>
+                            <constraint firstItem="nBW-7B-Cyb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="D4J-j1-aWB"/>
+                            <constraint firstItem="nBW-7B-Cyb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RXA-oI-Suh"/>
+                            <constraint firstAttribute="trailing" secondItem="nBW-7B-Cyb" secondAttribute="trailing" id="fMb-BN-fse"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nBW-7B-Cyb" secondAttribute="bottom" constant="548" id="hSr-pI-fVF"/>
+                            <constraint firstItem="JBl-Uj-iZV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lwN-9V-VLX"/>
+                            <constraint firstItem="JBl-Uj-iZV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="nLf-th-0VT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentView" destination="nBW-7B-Cyb" id="cog-cx-oF8"/>
+                        <outlet property="costLabel" destination="zLe-Ke-Qag" id="TWE-Bq-REg"/>
+                        <outlet property="distanceLabel" destination="Sl2-Yn-mw3" id="Whc-n6-vF0"/>
+                        <outlet property="durationLabel" destination="dfd-Zg-J5J" id="Bry-vW-oe5"/>
+                        <outlet property="mapView" destination="JBl-Uj-iZV" id="V7q-Vs-e99"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="108.39580209895054"/>
         </scene>
     </scenes>
 </document>
