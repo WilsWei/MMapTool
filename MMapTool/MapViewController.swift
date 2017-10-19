@@ -11,7 +11,7 @@ import GoogleMaps
 import GooglePlaces
 //import Directions
 
-class ViewController: UIViewController, GMSMapViewDelegate {
+class MapViewController: UIViewController, GMSMapViewDelegate {
    
     @IBOutlet weak var mapView: GMSMapView!
     @IBOutlet weak var contentView: UIView!

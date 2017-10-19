@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Cs9-Bm-XV8">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="vhA-k1-bwx">
+            <objects>
+                <tabBarController id="Cs9-Bm-XV8" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ZlI-o3-k1v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Ynm-j4-GBP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjH-sZ-EVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-942" y="196"/>
+        </scene>
+        <!--Map-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MMapTool" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Map" id="BYZ-38-t0r" customClass="MapViewController" customModule="MMapTool" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -46,6 +63,7 @@
                                     <constraint firstItem="dfd-Zg-J5J" firstAttribute="top" secondItem="Sl2-Yn-mw3" secondAttribute="bottom" constant="16" id="FGZ-nZ-EmR"/>
                                     <constraint firstItem="Sl2-Yn-mw3" firstAttribute="leading" secondItem="nBW-7B-Cyb" secondAttribute="leading" constant="20" id="PGg-hG-zud"/>
                                     <constraint firstItem="Sl2-Yn-mw3" firstAttribute="top" secondItem="nBW-7B-Cyb" secondAttribute="top" constant="20" id="cOp-2b-oQh"/>
+                                    <constraint firstAttribute="height" constant="97" id="fV5-9A-Wni"/>
                                     <constraint firstItem="dfd-Zg-J5J" firstAttribute="leading" secondItem="nBW-7B-Cyb" secondAttribute="leading" constant="20" id="xlN-5b-pgU"/>
                                 </constraints>
                             </view>
@@ -54,14 +72,14 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="JBl-Uj-iZV" secondAttribute="trailing" id="0If-lj-mt2"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JBl-Uj-iZV" secondAttribute="bottom" id="BjP-MO-IZL"/>
-                            <constraint firstItem="nBW-7B-Cyb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="D4J-j1-aWB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nBW-7B-Cyb" secondAttribute="bottom" id="FhR-dO-dsK"/>
                             <constraint firstItem="nBW-7B-Cyb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RXA-oI-Suh"/>
                             <constraint firstAttribute="trailing" secondItem="nBW-7B-Cyb" secondAttribute="trailing" id="fMb-BN-fse"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nBW-7B-Cyb" secondAttribute="bottom" constant="548" id="hSr-pI-fVF"/>
                             <constraint firstItem="JBl-Uj-iZV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lwN-9V-VLX"/>
                             <constraint firstItem="JBl-Uj-iZV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="nLf-th-0VT"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Map" id="Lwf-e2-e12"/>
                     <connections>
                         <outlet property="contentView" destination="nBW-7B-Cyb" id="cog-cx-oF8"/>
                         <outlet property="costLabel" destination="zLe-Ke-Qag" id="TWE-Bq-REg"/>
